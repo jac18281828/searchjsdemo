@@ -1,0 +1,21 @@
+{
+  "name": "searchjs",
+  "version": "0.1.0",
+  "description": "search js demo",
+  "type": "esnext",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "lint": "eslint . --ext .ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^16.11.7",
+    "@typescript-eslint/eslint-plugin": "^4.19.0",
+    "@typescript-eslint/parser": "^4.19.0",
+    "eslint": "^7.22.0",
+    "searchjs": "^1.0.2",
+    "typescript": "^3.3.3"
+  }
+}

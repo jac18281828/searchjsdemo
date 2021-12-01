@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "rootDir": ".",
+    "removeComments": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "index.ts",
+    "package.json"
+  ]
+}

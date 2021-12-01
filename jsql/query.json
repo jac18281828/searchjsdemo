@@ -1,0 +1,39 @@
+[
+    {
+        "_join": "AND",
+        "terms": [
+            {
+                "_propertySearch": "true",            
+                "transaction.status": [
+                    "pending",
+                    "confirmed"
+                ]
+            },
+            {
+                "_propertySearch": "true",
+                "transaction.from": [
+                    "0x188d51466bf230309c7d232db058dc574a5df5b3",
+                    "0x3351d58b1d3bf73122c431502fc94a77abba1edc",
+                    "0x0908cbeb2fbd745cc950e39787ccde1971093238",
+                    "0x18b46b448a93bff9c999360791b6470860750036",
+                    "0xc249d3e14b7a14a3464bf490cafc81d3372fa4da",
+                    "0x65e6e002a62d09701223d4f8be3c7a5d9081387b",
+                    "0xb649682b92a811746098e5c91e891e5142a41950",
+                    "0x478330af84ea74932db60e35533215de649a06c4",
+                    "0xc7e80dc713c241193f886165d0c126d4e5bd4fd5",
+                    "0x9bb4877861be251564a0f1906dc28835b696e161",
+                    "0x4143d3a341877154d6e95211464e1df1015b74bd",
+                    "0xdd71038f3463f511ee7403dbcbc87195302d891c",
+                    "0xad552e6dc057d1d825bf49df79d6b98eba846ebe",
+                    "0xfeee44ad365b6b1ec75c5621a0ad067371102854",
+                    "0x030514d80869744a4e2f60d2fd37d6081f5ed01a",
+                    "0x587b596f04f7db9c2cad3d6b87dd2b3a05de4f35",
+                    "0x3596ea087bfdaf52380eae441077572ed289d657",
+                    "0xad48103e4fc71796e9708cafc43adeed0d1076b7",
+                    "0x24b9c1f3fddff79893e5304f998f2f95ebebd149",
+                    "0xba9f376fa71904ccde2a756a24a4e47ec014ee0a"
+                ]
+            }
+        ]
+    }
+]
