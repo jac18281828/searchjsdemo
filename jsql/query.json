@@ -3,15 +3,17 @@
         "_join": "AND",
         "terms": [
             {
-                "_propertySearch": "true",            
-                "transaction.status": [
-                    "pending",
-                    "confirmed"
-                ]
+               "_propertySearch": false,
+               "_propertySearchDepth": -1,
+               "transaction.status": [
+                  "pending",
+                  "confirmed"
+               ]
             },
             {
-                "_propertySearch": "true",
-                "transaction.from": [
+               "_propertySearch": true,
+               "_propertySearchDepth": 5,
+                "from": [
                     "0x188d51466bf230309c7d232db058dc574a5df5b3",
                     "0x3351d58b1d3bf73122c431502fc94a77abba1edc",
                     "0x0908cbeb2fbd745cc950e39787ccde1971093238",
@@ -31,9 +33,11 @@
                     "0x3596ea087bfdaf52380eae441077572ed289d657",
                     "0xad48103e4fc71796e9708cafc43adeed0d1076b7",
                     "0x24b9c1f3fddff79893e5304f998f2f95ebebd149",
-                    "0xba9f376fa71904ccde2a756a24a4e47ec014ee0a"
+                    "0xba9f376fa71904ccde2a756a24a4e47ec014ee0a",
+                    "0xD9B2692409157eCA3Ef70709440272017dB3c84c",
                 ]
             }
-        ]
+
+         ]
     }
 ]

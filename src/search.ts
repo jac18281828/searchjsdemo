@@ -18,19 +18,24 @@ class SearchFilter {
     run(): void {
 
         const transaction_data = loadJson(TRANSACTION_DATA)
-        const query = loadJson(QUERY)
+        const query_list = loadJson(QUERY)
 
         let match = 0
         let miss = 0
 
-        transaction_data.forEach(function(transaction) {
-            if(matchObject(transaction, query)) {
-                console.log(transaction)
-                match++
-            } else {
-                miss++
-            }
+        query_list.forEach(function(query) {
+            transaction_data.forEach(function(transaction) {
+                if(matchObject(transaction, query)) {
+                    console.log(transaction)
+                    match++
+                } else {
+                    miss++
+                }
+            })
         })
+
+        match /= query_list.length
+        miss /= query_list.length
 
         console.log(match + ' matching')
         console.log(miss + '  do not match')
